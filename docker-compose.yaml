@@ -4,6 +4,6 @@ services:
    react-app:
         build: .
         ports:
-         - "80:5000"
+         - "8085:8080"
         stdin_open: true
         tty: true
