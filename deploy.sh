@@ -1,6 +1,6 @@
 #!/bin/bash
 result=$( sudo docker images -q reactimage )
-docker run -itd --name My-first-container2 -p 8085:8000 $result
+docker run -itd --name My-first-container2 -p 8085:8080 $result
 CONTAINER_NAME='My-first-container2'
 x=$(docker ps -q -f status=running -f name=$CONTAINER_NAME)
 if [[ -n "$x" ]]; then
