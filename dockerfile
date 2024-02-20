@@ -1,6 +1,6 @@
 FROM node:16.20.0-alpine
 
-ENV NODE_ENV=DEV
+ENV NODE_ENV=master
 
 WORKDIR /code
 
